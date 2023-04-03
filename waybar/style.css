@@ -1,0 +1,119 @@
+@keyframes blink-warning {
+    70% {
+        color: white;
+    }
+
+    to {
+        color: white;
+        background-color: orange;
+    }
+}
+
+@keyframes blink-critical {
+    70% {
+      color: white;
+    }
+
+    to {
+        color: white;
+        background-color: red;
+    }
+}
+
+
+* {
+    border: none;
+    border-radius: 2px;
+    font-family: FontAwesome;
+    font-size: 14px;
+    min-height: 0;
+}
+
+window#waybar {
+  background: rgba(54,57,59, 0.4);
+  color: #ffffff;
+  border-radius: 15px;
+  margin: 5px;
+}
+
+tooltip {
+  background-color: rgba(54,57,59, 0.4);
+	color: #ffffff;
+	/* margin: 5px; */
+	}
+
+
+#custom-date, #clock,  #memory, #cpu, #disk, #user, #language, #temperature {
+	background-color: transparent;
+	padding: 3px 10px;
+	margin: 5px 0px;
+}
+
+
+#custom-date {
+	color: #9ec3c4;
+}
+
+#user, #language, #clock {
+	color: #E4E0E0;
+}
+
+#clock {
+}
+
+#cpu, #disk, #memory, #temperature  {
+    color: #E4E0E0
+}
+
+#disk {
+    margin-left: 5px;
+}
+
+#workspaces button.active {
+	color:#475DB2;	
+}
+
+#tray{
+  margin-right: 5px;
+}
+
+
+#battery {
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+    color:#61E866;
+}
+
+#battery.warning {
+    color: #F0F56C;
+}
+
+#battery.critical {
+    color: #FF6B6B;
+}
+
+#network {
+  margin-left:10px;
+  margin-right: 5px;
+}
+
+#pulseaudio{
+  margin-left:5px;
+}
+
+#custom-power {
+    margin-right:15px;
+    font-size:15px;
+}
+
+#custom-weather{
+    margin-right:15px;
+}
+
+#custom-launcher {
+    font-size:15px;
+    margin-left:15px;
+    margin-right:2px;
+}
